@@ -21,7 +21,7 @@ PARAMS = {
     'predictor': 'cpu_predictor'
 }
 NUM_LOOPS = 100
-data = load.MLData('iris.csv')
+data = load.MLData('boston.csv')
 
 
 def run_training(size: int = 1000):
