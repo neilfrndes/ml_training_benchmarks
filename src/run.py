@@ -32,6 +32,7 @@ if __name__ == '__main__':
         model = importlib.import_module('models.' + args.model)
     except ModuleNotFoundError:
         logging.error(f"Model {args.model} not found.")
+        quit()
 
     if args.train:
         logging.info(f"Running training benchmark for {args.model}...")
